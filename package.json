@@ -1,0 +1,26 @@
+{
+  "name": "employee-tracker-mauriciotrevino",
+  "version": "1.0.0",
+  "description": "The Team Profile Generator is a Node.js command-line application that generates an HTML webpage displaying summaries for each member of a software engineering team. This application makes use of the Inquirer package (version 8.2.4) for collecting user input.",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mauri-tech/Mauricio-Trevino-Employee-Tracker-Challenge.git"
+  },
+  "author": "Mauricio Trevino",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mauri-tech/Mauricio-Trevino-Employee-Tracker-Challenge/issues"
+  },
+  "homepage": "https://github.com/mauri-tech/Mauricio-Trevino-Employee-Tracker-Challenge#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}

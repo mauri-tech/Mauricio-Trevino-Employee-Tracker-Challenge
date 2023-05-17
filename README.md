@@ -71,4 +71,4 @@ npm run seeds
 
 ## Walkthrough Video
 
-A walkthrough video demonstrating the functionality of the application is available at [VIDEO_LINK](#W8ingtorecord).
+A walkthrough video demonstrating the functionality of the application is available at [VIDEO_LINK](https://drive.google.com/file/d/1z1cyRmaaX76cpwW4lWt1bh8aajqRo6wA/view).

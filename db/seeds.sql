@@ -1,39 +1,47 @@
-INSERT INTO department (name)
-VALUES
-    ('IT'),
-    ('Sales'),
-    ('Engineering'),
-    ('Customer Service'),
-    ('Data Science');
+INSERT INTO department (id, name)
+VALUES (1, "IT Lead"),
+       (2, "Finance"),
+       (3, "Engineering"),
+       (4, "Customer Service"),
+       (5, "Data Science"),
+       (6, "Sales"),
+       (7, "IT");
 
-INSERT INTO roles (title, salary, department_id)
-VALUES
-    ('Cyber Secerity', 90000, 1),
-    ('IT Specialist', 70000, 1),
-    ('Customer Sales Solutions', 120000, 2),
-    ('Sales Rep', 70000, 2),
-    ('Data Engineer', 100000, 3),
-    ('Software Engineer', 120000, 3),
-    ('Call Center', 65000, 4),
-    ('Customer Service', 55000, 4),
-    ('Data Scientist', 100000, 5),
-    ('Data Engineer', 100000, 5);
-
-INSERT INTO employee(first_name, last_name, role_id, manager_id)
-VALUES
-    ('José', 'García', 2,2),
-    ('Carlos', 'Hernández', 5, 5),
-    ('Juan', 'Martínez', 1, 1),
-    ('Francisco', 'López', 1, 2),
-    ('Javier', 'González', 3,2),
-    ('Antonio', 'Pérez', 1, 5),
-    ('Miguel', 'Sánchez', 4, 1),
-    ('Rafael', 'Ramírez', 3, 2),
-    ('Alejandro', 'Torres', 2,5),
-    ('Ricardo', 'Ruiz', 5, 1),
-    ('Fernando', 'Romero', 3, 1),
-    ('Pablo', 'Alvarez', 4, 4),
-    ('Sergio', 'Moreno', 4,null),
-    ('Jorge', 'Gutierrez', 2, null),
-    ('Alberto', 'Jimenez', 3, null),
-    ('Roberto', 'Delgado', 5, null)
+INSERT INTO roles (id, title, salary, department_id)
+VALUES (1, "Cyber Securit", 90000, 1),
+       (2, "IT Specialist", 85000, 2),
+       (3, "Customer Sales Solutions", 75000, 3),
+       (4, "Sales Rep", 70000, 4),
+       (5, "Engineering Manager", 135000, 5),
+       (6, "Sales Representative", 80000, 6),
+       (7, "Software Engineer", 100000, 7),
+       (8, "IT Manager", 120000, 7);
+       
+INSERT INTO employee (id, first_name, last_name, role_id, manager_id)
+VALUES (1, "William", "Smith", 1, NULL),
+       (2, "Jose", "Madero", 2, 1),
+       (3, "Ricardo", "Hill", 3, 1),
+       (4, "Ivan", "Fried", 4, 1),
+       (5, "Mauricio", "Trevino", 5, 1),
+       (6, "Jose", "Garcia", 1, 1),
+       (7, "Carlos", "Hernandez", 2, 1),
+       (8, "Juan", "Martinez", 3, 1),
+       (9, "Francisco", "Lopez", 4, 1),
+       (10, "Javier", "Gonzalez", 5, 1),
+       (11, "Antonio", "Perez", 1, 1),
+       (12, "Miguel", "Sanchez", 2, 1),
+       (13, "Rafael", "Ramirez", 3, 1),
+       (14, "Alejandro", "Torres", 4, 1),
+       (15, "Ricardo", "Ruiz", 5, 1),
+       (16, "Fernando", "Romero", 1, 1),
+       (17, "Pablo", "Alvarez", 2, 1),
+       (18, "Sergio", "Moreno", 3, NULL),
+       (19, "Jorge", "Gutierrez", 4, NULL),
+       (20, "Alberto", "Jimenez", 5, NULL),
+       (21, "Roberto", "Delgado", 1, NULL),
+       (22, "Laura", "Gomez", 6, NULL),
+       (23, "Maria", "Rodriguez", 6, 22),
+       (24, "Andres", "Lopez", 6, 22),
+       (25, "Diego", "Gonzalez", 7, 23),
+       (26, "Luis", "Hernandez", 7, 23),
+       (27, "Ana", "Perez", 8, 24);

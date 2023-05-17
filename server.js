@@ -2,13 +2,12 @@ const express = require('express');
 const inquirer = require('inquirer');
 const mysql = require('mysql2');
 const cTable = require('console.table');
-const { CallTracker } = require('assert');
-require('dotenv').config()
+require('dotenv').config();
 
 const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'W@lker!',
+    password: process.env.DB_PASSWORD, // use environment variable
     database: 'tracker_db'
 });
 
@@ -31,8 +30,7 @@ const InquirerPrompt = async () => {
                     'Add department',
                     'Add role',
                     'Add employee',
-                    'Update all departments',
-                    'Update employee infomation',
+                    'Update employee information',
                     'Exit'
                 ]
             }
@@ -57,11 +55,8 @@ const InquirerPrompt = async () => {
             case "Add employee":
                 await addEmployees();
                 break;
-            case "Update all departments":
-                await allDepartments();
-                break;
-            case "Update employee infomation":
-                await employeeInfomation();
+            case "Update employee information":
+                await updateEmployee();
                 break;
             case "Exit":
                 connection.end();

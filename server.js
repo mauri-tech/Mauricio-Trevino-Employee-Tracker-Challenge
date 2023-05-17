@@ -7,7 +7,7 @@ require('dotenv').config();
 const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: process.env.DB_PASSWORD, // use environment variable
+    password: 'Admin01#', // Update the password here
     database: 'tracker_db'
 });
 

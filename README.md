@@ -1,44 +1,74 @@
-# Team Profile Generator
+# Employee Tracker
 
-The Team Profile Generator is a Node.js command-line application that generates an HTML webpage displaying summaries for each member of a software engineering team. This application makes use of the Inquirer package (version 8.2.4) for collecting user input.
+This project is a command-line application built using Node.js, Inquirer, and MySQL. It allows business owners to manage their company's employee database by performing various operations such as viewing and managing departments, roles, and employees.
 
-## Installation
+## Project Details
 
-To install the necessary dependencies, use the following command:
+- **Author:** Mauricio Trevino
+- **Email:** mauricio.trevinon91@gmail.com
+- **GitHub Repo:** [https://github.com/mauri-tech/Mauricio-Trevino-Employee-Tracker-Challenge](https://github.com/mauri-tech/Mauricio-Trevino-Employee-Tracker-Challenge)
+- **GitHub:** [https://github.com/mauri-tech](https://github.com/mauri-tech)
 
-npm install inquirer@8.2.4
+## User Story
 
-## Usage
-
-To start the application, run the following command in your project folder:
-
-node index.js
-
-You will be prompted with a series of questions about each team member. Provide the necessary information for each member, such as their name, role, ID, email, and any role-specific details (e.g., office number for managers, GitHub username for engineers, or school name for interns).
-
-Once you have entered the information for all team members, the application will generate an HTML file named `team.html` in the output directory. This file will display the summaries of each team member, including their name, role, ID, email, and role-specific details.
-
-## Testing
-
-Unit tests have been implemented for each part of the code to ensure its functionality and maintainability. To run the tests, use the following command:
-
-npm test
+AS A business owner
+I WANT to be able to view and manage the departments, roles, and employees in my company
+SO THAT I can organize and plan my business
 
 
-All tests should pass successfully, indicating that the code is working as intended.
+## Acceptance Criteria
+
+The application should meet the following criteria:
+
+1. Present the user with the following options when starting the application:
+   - View all departments
+   - View all roles
+   - View all employees
+   - Add a department
+   - Add a role
+   - Add an employee
+   - Update an employee role
+
+2. When the user chooses to view all departments, display a formatted table showing department names and department IDs.
+
+3. When the user chooses to view all roles, display the job title, role ID, department, and salary for each role in a formatted table.
+
+4. When the user chooses to view all employees, display a formatted table showing employee data, including employee IDs, first names, last names, job titles, departments, salaries, and managers.
+
+5. When the user chooses to add a department, prompt them to enter the name of the department and add it to the database.
+
+6. When the user chooses to add a role, prompt them to enter the name, salary, and department for the role and add it to the database.
+
+7. When the user chooses to add an employee, prompt them to enter the employee's first name, last name, role, and manager, and add the employee to the database.
+
+8. When the user chooses to update an employee role, prompt them to select an employee to update and their new role, and update this information in the database.
+
+## Getting Started
+
+To run the application, you will need to have the following installed:
+
+- Node.js
+- MySQL2 package
+- Inquirer package
+- console.table package
+
+1. Clone the GitHub repository: [https://github.com/mauri-tech/Mauricio-Trevino-Employee-Tracker-Challenge](https://github.com/mauri-tech/Mauricio-Trevino-Employee-Tracker-Challenge)
+
+2. Install the dependencies by running the following command:
+
+npm install
+
+
+3. Set up your MySQL database and update the database credentials in the code.
+
+4. Create and populate the database by running the following command:
+
+npm run seeds
+
+
+5. Start the application by running the following command:
+
 
 ## Walkthrough Video
 
-Please refer to the following walkthrough video that demonstrates the functionality of the Team Profile Generator and shows all the tests passing:
-
-[Team Profile Generator Walkthrough Video](..)
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-## Contact
-
-For any questions or inquiries, please contact me at [mauricio.trevino91@gmail.com](mailto:mauricio.trevinon91@gmail.com).
-
-
+A walkthrough video demonstrating the functionality of the application is available at [VIDEO_LINK](#W8ingtorecord).
